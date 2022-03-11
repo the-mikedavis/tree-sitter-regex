@@ -41,6 +41,7 @@ module.exports = grammar({
         $.boundary_assertion,
         $.non_boundary_assertion,
         $.lookahead_assertion,
+        $.lookbehind_assertion,
         $.pattern_character,
         $.character_class,
         $.any_character,
@@ -68,7 +69,13 @@ module.exports = grammar({
     non_boundary_assertion: $ => '\\B',
     lookahead_assertion: $ => seq(
       '(?',
-      choice('=', '!', '<=', '<!'),
+      choice('=', '!'),
+      $.pattern,
+      ')'
+    ),
+    lookbehind_assertion: $ => seq(
+      '(?<',
+      choice('=', '!'),
       $.pattern,
       ')'
     ),
