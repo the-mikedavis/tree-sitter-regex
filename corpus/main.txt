@@ -231,12 +231,12 @@ lookbehind
           (pattern_character)
           (pattern_character)
           (pattern_character)
-          (pattern_character))))))
+          (pattern_character))))
     (pattern_character)
     (pattern_character)
     (pattern_character)
     (pattern_character)
-    (pattern_character)
+    (pattern_character)))
 
 ================================================================================
 negative lookbehind
@@ -252,12 +252,12 @@ negative lookbehind
           (pattern_character)
           (pattern_character)
           (pattern_character)
-          (pattern_character))))))
+          (pattern_character))))
     (pattern_character)
     (pattern_character)
     (pattern_character)
     (pattern_character)
-    (pattern_character)
+    (pattern_character)))
 
 ================================================================================
 character classes
