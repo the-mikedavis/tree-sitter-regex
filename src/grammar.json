@@ -85,6 +85,10 @@
               },
               {
                 "type": "SYMBOL",
+                "name": "lookbehind_assertion"
+              },
+              {
+                "type": "SYMBOL",
                 "name": "pattern_character"
               },
               {
@@ -194,14 +198,36 @@
             {
               "type": "STRING",
               "value": "!"
+            }
+          ]
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pattern"
+        },
+        {
+          "type": "STRING",
+          "value": ")"
+        }
+      ]
+    },
+    "lookbehind_assertion": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "(?<"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "="
             },
             {
               "type": "STRING",
-              "value": "<="
-            },
-            {
-              "type": "STRING",
-              "value": "<!"
+              "value": "!"
             }
           ]
         },
